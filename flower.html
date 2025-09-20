@@ -25,12 +25,10 @@
       }
 
       body {
-        background-image: var(--color-bg);
-        min-height: 100vh;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        overflow: hidden;
+  background-image: var(--color-bg);
+  min-height: 100vh;
+  display: block;
+  overflow: hidden;
       }
 
       h1 {
@@ -383,7 +381,10 @@
       id="id_audio"
       src="Those Eyes.mp3"
     ></audio>
-    <h1>Feliz inicio de Primavera, princesita.</h1>
+     <h1>Feliz inicio de Primavera, princesita.</h1>
+    <div style="width:100%;text-align:center;margin-top:30px;">
+      <button class="flower-btn">Me acuerdo de tí, aquí.</button>
+    </div>
     <div class="sunflower">
       <div class="flower_wrapper">
         <div class="flower_stem"></div>
@@ -427,7 +428,6 @@
     <div class="light light-10"></div>
     <div class="light light-11"></div>
     <div class="light light-12"></div>
-    <button class="flower-btn">Me acuerdo de tí, aquí.</button>
     <script>
       const floweBtn = document.querySelector(".flower-btn");
       const audio = document.getElementById("id_audio")
